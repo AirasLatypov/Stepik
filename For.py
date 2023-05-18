@@ -1,31 +1,3 @@
-brothers = ["Aibulat", "Salavat", "Ильяс", "Airas", "Azat", "Ilfir", "Айсылу"]
-data = "Салам"
-data.upper()
-print(data.upper())
-print(brothers)
-brothers.sort(reverse=True)
-print(brothers)
-# data = "Python developer"
-# # for name in brothers:
-# #     print(f"Hello, {name}!")
-#
-#
-# # print(len(brothers))
-# # print(brothers[0])
-# # print(brothers)
-# # brothers.pop(0)
-# # print(brothers)
-# # print(len(brothers))
-# while len(brothers):
-#     print(f"Salam {brothers[0]}")
-#     # print(brothers)
-#     brothers.pop(0)
-#     # print(len(brothers))
-#
-# print(f"Ostatok v spiske {brothers}")
-
-
-
 # Программа принимает на вход натуральное число N. Ваша задача: вывести на экран все числа от 1 до N, каждое число на отдельной строке.
 # a = int(input())
 # for i in range(1, a+1):
@@ -83,18 +55,37 @@ print(brothers)
 
 
 
+# 	5	6
+# 7	35	42
+# 8	40	48
+# 9	45	54
+# 10	50	60
+
+x_start = int(input())
+x_finish = int(input())
+y_start = int(input())
+y_finish = int(input())
 
 
+line_x = []
+for x in range(x_start, x_finish+1):    # 3, 7
+    line_x.append(x)                    # [3, 4, 5 ,6 ,7]
+print(f"x line: {line_x}")
 
-# y_start = int(input())
-# y_finish = int(input())
-# x_start = int(input())
-# x_finish = int(input())
-#
-#
-# line_x = []
-#
-# for x in range(x_start, x_finish+1):
-#     line_x.append(x)
-#
-# print(line_x)
+line_y = []
+for y in range(y_start, y_finish+1):    # 2, 5
+    line_y.append(y)                    # [2, 3, 4, 5]
+print(f"y line: {line_y}")
+
+# while True:
+
+
+result = []
+for y in line_y:        # [2, 3, 4, 5] - Y
+    for x in line_x:    # [3, 4, 5 ,6 ,7] - X
+
+        answer = f"\t{x * y}"   # 2 * 3 = 6
+        result.append(answer)   # [6, 8, 10, 12, 14]
+
+    print(*result)              # 6 8 10 12 14
+    result = []                 # [6, 8, 10, 12, 14] > []
