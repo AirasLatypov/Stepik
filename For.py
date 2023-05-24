@@ -61,31 +61,31 @@
 # 9	45	54
 # 10	50	60
 
-x_start = int(input())
-x_finish = int(input())
-y_start = int(input())
-y_finish = int(input())
+# x_start = int(input())
+# x_finish = int(input())
+# y_start = int(input())
+# y_finish = int(input())
 
 
-line_x = []
-for x in range(x_start, x_finish+1):    # 3, 7
-    line_x.append(x)                    # [3, 4, 5 ,6 ,7]
-print(f"x line: {line_x}")
+# line_x = []
+# for x in range(x_start, x_finish+1):    # 3, 7
+#     line_x.append(x)                    # [3, 4, 5 ,6 ,7]
+# print(f"x line: {line_x}")
 
-line_y = []
-for y in range(y_start, y_finish+1):    # 2, 5
-    line_y.append(y)                    # [2, 3, 4, 5]
-print(f"y line: {line_y}")
+# line_y = []
+# for y in range(y_start, y_finish+1):    # 2, 5
+#     line_y.append(y)                    # [2, 3, 4, 5]
+# print(f"y line: {line_y}")
 
-# while True:
+# # while True:
 
 
-result = []
-for y in line_y:        # [2, 3, 4, 5] - Y
-    for x in line_x:    # [3, 4, 5 ,6 ,7] - X
+# result = []
+# for y in line_y:        # [2, 3, 4, 5] - Y
+#     for x in line_x:    # [3, 4, 5 ,6 ,7] - X
 
-        answer = f"\t{x * y}"   # 2 * 3 = 6
-        result.append(answer)   # [6, 8, 10, 12, 14]
+#         answer = f"\t{x * y}"   # 2 * 3 = 6
+#         result.append(answer)   # [6, 8, 10, 12, 14]
 
-    print(*result)              # 6 8 10 12 14
-    result = []                 # [6, 8, 10, 12, 14] > []
+#     print(*result)              # 6 8 10 12 14
+#     result = []                 # [6, 8, 10, 12, 14] > []
